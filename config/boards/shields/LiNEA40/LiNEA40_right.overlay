@@ -1,4 +1,5 @@
 #include "LiNEA40.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 &default_transform {
     col-offset = <6>;
 };
@@ -56,7 +57,10 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT-D6
+			        irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT-D6
+
+        evt-type = <INPUT_EV_REL>;
+
         automouse-layer = <1>;
         snipe-layers = <2>;
         scroll-layers = <5>;
