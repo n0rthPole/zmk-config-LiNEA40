@@ -62,6 +62,10 @@
 
 
 &trackball_listener {
+    auto_mouse_layer {
+        input-processors = <&zip_temp_layer MOUSE 500>;
+    };
+
     scroller {
         layers = <SCROLL>;
         input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT> //スクロール方向を逆転
