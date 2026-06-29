@@ -1,4 +1,4 @@
-#include <input/processors.dtsi>
+#include "LiNEA40.dtsi"
 &default_transform {
     col-offset = <6>;
 };
