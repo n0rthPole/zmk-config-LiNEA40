@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -177,10 +177,10 @@
 
         MARK {
             bindings = <
-&kp LA(F8)  &kp AT     &trans            &kp LC(PG_UP)  &kp LC(PAGE_DOWN)                    &trans  &kp LS(LC(L))  &kp ASTERISK  &trans  &trans
-&kp LC(Y)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(MINUS)  &trans                               &trans  &trans         &trans        &trans  &trans
-&kp LC(Z)   &kp LC(C)  &trans            &trans         &trans                               &trans  &trans         &trans        &trans  &trans
-&trans      &trans     &trans            &trans         &trans             &trans    &trans  &trans                 &trans        &trans  &trans
+&kp LA(F8)  &macro2    &trans            &kp LC(PG_UP)  &kp LC(PAGE_DOWN)                    &trans  &kp LS(LC(L))  &macro3  &trans  &trans
+&kp LC(Y)   &kp LC(X)  &kp LS(LC(SEMI))  &kp LC(MINUS)  &trans                               &trans  &trans         &trans   &trans  &trans
+&kp LC(Z)   &kp LC(C)  &macro0           &macro1        &trans                               &trans  &trans         &trans   &trans  &trans
+&trans      &trans     &trans            &trans         &trans             &trans    &trans  &trans                 &trans   &trans  &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
