@@ -6,6 +6,15 @@
 };
 
 &zip_temp_layer {
+    excluded-positions = <
+        16 // J
+        18 // L
+        20 // Z
+        30 // Ctrl
+    >;
+};
+
+&zip_temp_layer {
     require-prior-idle-ms = <200>;
 };
 
