@@ -66,9 +66,9 @@
     scroller {
         layers = <SCROLL>;
         input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,
-            <&zip_xy_to_scroll_mapper>;
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, // 縦スクロール方向反転
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_wheel_scaler 1 2>;                      // スクロール量を1/2
     };
 };
 
