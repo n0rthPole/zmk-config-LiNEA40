@@ -63,7 +63,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
 			        irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT-D6
-        cpi = <900>;
+        cpi = <600>;
 
 	    invert-y;
 
@@ -81,5 +81,7 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&zip_temp_layer 1 1000>;	//オートマウスレイヤーの選択
+    input-processors = 
+		<&cursor_scaler 3 2>,      // カーソル移動量1.5倍
+		<&zip_temp_layer 1 1000>;	//オートマウスレイヤーの選択
 };
