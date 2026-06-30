@@ -27,7 +27,7 @@
 };
 
 &mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 500>;
+    input-processors = <&zip_temp_layer 1 300>;
 };
 
 //mouse cursol
