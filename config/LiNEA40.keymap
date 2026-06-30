@@ -15,6 +15,16 @@
 #define SCROLL 5
 #define WIRELESS 6
 
+&mt {
+    flavor = "balanced";
+    quick-tap-ms = <0>;
+};
+
+&lt {
+    quick-tap-ms = <0>; // 初期設定は300
+    flavor = "balanced";
+};
+
 //mouse cursol
 
 &mmv {
