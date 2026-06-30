@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: badjeff    # <-- PMW3610
       url-base: https://github.com/badjeff
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -21,5 +23,8 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
   self:
     path: config
