@@ -68,7 +68,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, // 縦スクロール方向反転
             <&zip_xy_to_scroll_mapper>,
-            <&zip_wheel_scaler 1 2>;                      // スクロール量を1/2
+            <&zip_wheel_scaler 1 8>;                      // スクロール量を1/8
     };
 };
 
